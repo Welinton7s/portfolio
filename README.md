@@ -10,10 +10,12 @@ habilidades e projetos como desenvolvedor em formação.
 
 Landing page responsiva com as seguintes seções:
 
-- **Hero** — apresentação pessoal com nome, cargo e botão de chamada para ação
-- **Sobre mim** — descrição profissional e tecnologias dominadas
-- **Consultar CEP** — integração com a API pública ViaCEP
-- **Contato** — formulário com nome, e-mail e mensagem
+- **Hero** — apresentação pessoal com nome, cargo e botões de chamada para ação
+- **Sobre mim** — descrição profissional, cidade natal e tecnologias dominadas
+- **Habilidades** — *(em desenvolvimento)*
+- **Projetos** — *(em desenvolvimento)*
+- **Consultar CEP** — integração com a API pública ViaCEP *(planejado)*
+- **Contato** — formulário com nome, e-mail e mensagem *(planejado)*
 
 ---
 
@@ -50,11 +52,29 @@ portfolio/
 
 │
 
-└── imagens/
+├── imagens/
 
-├── foto.png
+│   ├── logo.png
 
-└── icons/
+│   ├── perfil.png
+
+│   ├── sobre.png
+
+│   ├── html-5.png
+
+│   ├── css-3.png
+
+│   ├── js.png
+
+│   ├── java.png
+
+│   └── mysql.png
+
+│
+
+└── arquivos/
+
+└── cv-welinton-araujo.pdf
 ---
 
 ## 🚀 Como executar
