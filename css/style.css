@@ -1,0 +1,222 @@
+:root{
+    --bg-primary: #060C18;
+    --bg-secondary: #0F172A;
+    --primary: #2563EB;
+    --white: #FFFFFF;
+    --gray: #9B9C9F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-secondary);
+}
+
+header{
+    background-color: var(--bg-primary);
+    padding: 1.25rem 0;
+}
+
+.container{
+    width: min(90%, 75rem);
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    text-decoration: none;
+}
+
+.logo img{
+    height: 4rem;
+    border-radius: 50%;
+}
+
+.logo span{
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: color .3s ease;
+}
+
+.logo span:hover{
+    color: var(--primary);
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 500;
+    transition: color .3s ease;
+}
+
+.menu a:hover{
+    color: var(--primary);
+}
+
+#home{
+    min-height: 85vh;
+    background-color: var(--bg-secondary);
+}
+
+#home .home-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+#home .home-text{
+    margin-top: 2rem;
+    color: #94A3B8;
+}
+
+#home .home-text h1{
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: #F8FAFC;
+}
+
+#home .home-text h1 span{
+    color: #3B82F6;
+}
+
+#home .home-text h2{
+    margin-top: 2rem;
+    color: #3B82F6;
+    font-size: 1.25rem;
+}
+
+#home .home-text .descricao{
+    margin-top: 2rem;
+    color: #94A3B8;
+}
+
+#home .home-text .botoes{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+#home .home-text .botoes .btn,
+#home .home-text .botoes .btn-outline{
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: all .3s ease;
+}
+
+#home .home-text .botoes .btn{
+    background-color: #3B82F6;
+    color: #F8FAFC;
+    border: 2px solid #3B82F6;
+}
+
+#home .home-text .botoes .btn:hover{
+    background-color: #2563EB;
+}
+
+#home .home-text .botoes .btn-outline{
+    background-color: transparent;
+    color: #3B82F6;
+    border: 2px solid #3B82F6;
+}
+
+#home .home-text .botoes .btn-outline:hover{
+    background-color: #3B82F6;
+    color: #F8FAFC;
+}
+
+#home .home-img img{
+    height: 35rem;
+}
+
+#sobre{
+    background-color: var(--white);
+}
+
+#sobre .sobre-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+#sobre .sobre-content .sobre-text{
+    margin-top: 2rem;
+}
+
+#sobre .sobre-content .sobre-text h2 {
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+#sobre .sobre-content .sobre-text h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 2px;
+}
+
+#sobre .sobre-content .sobre-text .descricao{
+    margin-top: 2rem;
+}
+
+#sobre .sobre-content .sobre-text .icon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+#sobre .sobre-content .sobre-text .icon-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#sobre .sobre-content .sobre-text .icon-item img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+#sobre .sobre-content .sobre-text .icon-item span {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+#sobre .sobre-content .sobre-img img{
+    width: 35rem;
+}
