@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
     <title>Portfólio</title>
 </head>
 
@@ -14,8 +15,8 @@
             <nav class="navbar">
 
                 <a href="#home" class="logo">
-                    <img src="imagens/logo.png" alt="Logotipo com as iniciais WA de Welinton Araújo">
                     <span>Welinton Araújo</span>
+                    <img src="imagens/logo.png" alt="Logotipo com as iniciais WA de Welinton Araújo">
                 </a>
 
                 <ul class="menu">
@@ -109,25 +110,99 @@
         </section>
 
         <section id="projetos">
+            <div class="container projetos-content">
 
-        </section>
+                <div class="projetos-lista">
+                    <h2>Meus Projetos</h2>
+                    <div class="projetos-grid">
+                        <div class="projeto-card">
+                            <div class="projeto-img">
+                                <img src="imagens/simbora.png" alt="Captura de tela do projeto Simbora">
+                            </div>
+                            <div class="projeto-info">
+                                <h3>Simbora</h3>
+                                <p class="descricao">
+                                    Landing page para uma agência fictícia, criada para treinar
+                                    HTML, CSS, JavaScript e Bootstrap, aplicando conceitos de
+                                    layout responsivo, componentização e interatividade.
+                                </p>
+                                <div class="projeto-tags">
+                                    <span>HTML</span>
+                                    <span>CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Bootstrap</span>
+                                </div>
+                                <a href="https://github.com/Welinton7s/simbora-agencia/tree/main/Simbora" target="_blank" class="btn-github">
+                                    Ver no GitHub
+                                </a>
+                            </div>
+                        </div>
+                        <div class="projeto-card projeto-em-breve">
+                            <p>Em breve, mais projetos</p>
+                        </div>
+                    </div>
+                </div>
 
-        <section id="api">
+                <div class="projetos-text">
+                    <h2>Consulta CEP</h2>
+                    <div class="formulario">
+                        <form class="formulario-cep">
+                            <input type="text" placeholder="Digite seu CEP">
+                            <button>Buscar</button>
+                            <div class="cep-dica">
+                                <img src="imagens/localizacao.png" alt="">
+                                <span>Digite um CEP válido para buscar o endereço.</span>
+                            </div>
+                        </form>
+                        <div class="formulario-info">
+                            <input type="text" placeholder="Rua: ---" readonly>
+                            <input type="text" placeholder="Bairro: ---" readonly>
+                            <input type="text" placeholder="Cidade: ---" readonly>
+                            <input type="text" placeholder="Estado: ---" readonly>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
         </section>
 
         <section id="contato">
-
+            <div class="container contato-content">
+                <div class="contato-text">
+                    <h2>Entre Em Contato</h2>
+                </div>
+                <form class="contato-form">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem" rows="5"></textarea>
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+                <div class="contato-lista">
+                    <h3>Vamos Conversar!</h3>
+                    <p>Se você tem uma oportunidade, projeto ou apenas quer trocar uma ideia, será um prazer falar com você.</p>
+                    <ul class="contato-info">
+                        <li><i class="ti ti-mail"></i> welintonara7@gmail.com</li>
+                        <li><i class="ti ti-phone"></i> (99) 984646035</li>
+                        <li><i class="ti ti-map-pin"></i> Presidente Dutra, Maranhão</li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
     </main>
 
     <footer>
-
-        <div class="container">
+        <div class="container footer-content">
             <p>© 2026 Welinton Araújo. Todos os direitos reservados.</p>
+            <div class="footer-social">
+                <a href="https://github.com/Welinton7s" target="_blank" aria-label="GitHub">
+                    <i class="ti ti-brand-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/welinton-araújo-w7/" target="_blank" aria-label="LinkedIn">
+                    <i class="ti ti-brand-linkedin"></i>
+                </a>
+            </div>
         </div>
-
     </footer>
 
     <script src="js/script.js"></script>
