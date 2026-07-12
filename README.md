@@ -53,7 +53,7 @@ portfolio/
 │   └── mysql.png
 │
 └── arquivos/
-└── cv-welinton-araujo.pdf
+    └── cv-welinton-araujo.pdf
 ---
 
 ## 🚀 Como executar
