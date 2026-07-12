@@ -10,12 +10,10 @@ habilidades e projetos como desenvolvedor em formação.
 
 Landing page responsiva com as seguintes seções:
 
-- **Hero** — apresentação pessoal com nome, cargo e botões de chamada para ação
-- **Sobre mim** — descrição profissional, cidade natal e tecnologias dominadas
-- **Habilidades** — *(em desenvolvimento)*
-- **Projetos** — *(em desenvolvimento)*
-- **Consultar CEP** — integração com a API pública ViaCEP *(planejado)*
-- **Contato** — formulário com nome, e-mail e mensagem *(planejado)*
+- **Início** — apresentação pessoal com nome, cargo, descrição e botões de chamada para ação (projetos, contato e download do CV)
+- **Sobre mim** — descrição profissional, cidade natal e tecnologias dominadas (HTML, CSS, JavaScript, Java, MySQL)
+- **Projetos** — cards com os projetos desenvolvidos, incluindo o **Simbora** (landing page de agência fictícia) e uma demonstração de consumo de API pública (**Consulta CEP**, via ViaCEP)
+- **Contato** — formulário de contato (nome, e-mail e mensagem) e informações diretas de contato
 
 ---
 
@@ -25,56 +23,41 @@ Landing page responsiva com as seguintes seções:
 - CSS3
 - JavaScript (ES6+)
 - API ViaCEP (https://viacep.com.br)
+- Tabler Icons
 - Git e GitHub
 
 ---
 
 ## 📁 Estrutura do Projeto
+
+```
 portfolio/
-
 │
-
 ├── index.html
-
 ├── README.md
-
 │
-
 ├── css/
-
 │   └── style.css
-
 │
-
 ├── js/
-
 │   └── script.js
-
 │
-
 ├── imagens/
-
 │   ├── logo.png
-
 │   ├── perfil.png
-
 │   ├── sobre.png
-
+│   ├── simbora.png
+│   ├── localizacao.png
 │   ├── html-5.png
-
 │   ├── css-3.png
-
 │   ├── js.png
-
 │   ├── java.png
-
 │   └── mysql.png
-
 │
-
 └── arquivos/
+    └── cv-welinton-araujo.pdf
+```
 
-└── cv-welinton-araujo.pdf
 ---
 
 ## 🚀 Como executar
@@ -106,7 +89,7 @@ cd portfolio
 
 ## 📌 Status do Projeto
 
-🚧 Em desenvolvimento
+🚧 Em desenvolvimento — estrutura, estilo e conteúdo das seções concluídos. Faltam: lógica JavaScript da busca ViaCEP, envio do formulário de contato, foto de perfil e currículo em PDF.
 
 ---
 

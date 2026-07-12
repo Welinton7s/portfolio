@@ -14,7 +14,7 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    background-color: var(--bg-secondary);
+    background-color: var(--white);
 }
 
 header{
@@ -219,4 +219,305 @@ nav{
 
 #sobre .sobre-content .sobre-img img{
     width: 35rem;
+}
+
+#projetos{
+    background-color: var(--white);
+    padding: 2rem 0 2rem 0;
+}
+
+#projetos .projetos-lista h2 {
+    position: relative;
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+#projetos .projetos-lista h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 2px;
+}
+
+#projetos .projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+#projetos .projeto-card {
+    background-color: #F8FAFC;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    border: 1px solid #E2E8F0;
+}
+
+#projetos .projeto-img img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+    display: block;
+}
+
+#projetos .projeto-info {
+    padding: 1.25rem;
+}
+
+#projetos .projeto-info h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+#projetos .projeto-info .descricao {
+    font-size: 0.875rem;
+    color: #64748B;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+#projetos .projeto-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+#projetos .projeto-tags span {
+    background-color: #EFF6FF;
+    color: #2563EB;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+}
+
+#projetos .btn-github {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    background-color: #1E293B;
+    color: #F8FAFC;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+}
+
+#projetos .projeto-em-breve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    border: 2px dashed #CBD5E1;
+    background-color: transparent;
+    color: #94A3B8;
+    font-size: 0.875rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+#projetos .projetos-content .projetos-text h2 {
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+#projetos .projetos-content .projetos-text h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 2px;
+}
+
+#projetos .projetos-content .formulario{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 2rem;
+}
+
+#projetos .projetos-content .formulario-cep input{
+    width: 20rem;
+    height: 1.5rem;
+    padding-left: 1rem;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+#projetos .projetos-content .formulario-cep button{
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    width: 5rem;
+    height: 1.5rem;
+}
+
+#projetos .projetos-content .cep-dica{
+    margin-top: 1rem;
+    width: 25rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EFF6FF;
+    color: #2563EB;
+    border-radius: 8px;
+}
+
+#projetos .projetos-content .cep-dica img{
+    height: 1.5rem;
+}
+
+#projetos .projetos-content .formulario .formulario-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+#projetos .projetos-content .formulario .formulario-info input{
+    width: 18rem;
+    height: 2rem;
+    padding-left: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #E2E8F0;
+}
+
+#contato{
+    background-color: #F8FAFC;
+    padding: 2rem 0 2rem 0;
+}
+
+#contato .contato-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+#contato .contato-content .contato-text {
+    grid-column: 1 / -1;
+}
+
+#contato .contato-content .contato-text h2{
+    position: relative;
+    padding-bottom: 0.75rem;
+}
+
+#contato .contato-content .contato-text h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--primary);
+    border-radius: 2px;
+}
+
+#contato .contato-content .contato-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-content: start;
+}
+
+#contato .contato-content .contato-form input{
+    width: 100%;
+    height: 2.5rem;
+    padding: 0 1rem;
+    border-radius: 5px;
+    border: 1px solid #E2E8F0;
+}
+
+#contato .contato-content .contato-form textarea{
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 8rem;
+    padding: 1rem;
+    resize: vertical;
+    border-radius: 5px;
+    border: 1px solid #E2E8F0;
+}
+
+#contato .contato-content .contato-form button{
+    grid-column: 1 / -1;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    height: 2.75rem;
+    cursor: pointer;
+}
+
+#contato .contato-content .contato-lista{
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    width: 100%;
+    min-height: 15rem;
+    height: fit-content;
+    border-radius: 0.75rem;
+}
+
+#contato .contato-content .contato-lista p{
+    margin-top: 1rem;
+    color: #64748B;
+    line-height: 1.6;
+}
+
+#contato .contato-content .contato-lista ul{
+    margin-top: 1rem;
+    list-style: none;
+}
+
+#contato .contato-content .contato-lista ul li{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+#contato .contato-content .contato-lista ul li i{
+    color: var(--primary);
+    font-size: 1.125rem;
+}
+
+footer{
+    background-color: var(--bg-primary);
+    padding: 1.5rem 0;
+}
+
+footer .footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+footer p{
+    color: var(--gray);
+    font-size: 0.875rem;
+}
+
+footer .footer-social{
+    display: flex;
+    gap: 1.25rem;
+}
+
+footer .footer-social a{
+    color: var(--gray);
+    font-size: 1.375rem;
+    transition: color 0.3s ease;
+}
+
+footer .footer-social a:hover{
+    color: var(--primary);
 }
