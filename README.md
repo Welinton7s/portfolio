@@ -29,6 +29,8 @@ Landing page responsiva com as seguintes seções:
 ---
 
 ## 📁 Estrutura do Projeto
+
+​```
 portfolio/
 │
 ├── index.html
@@ -54,6 +56,7 @@ portfolio/
 │
 └── arquivos/
     └── cv-welinton-araujo.pdf
+​```
 ---
 
 ## 🚀 Como executar
