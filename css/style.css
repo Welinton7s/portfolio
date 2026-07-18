@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 body{
     font-family: "Poppins", sans-serif;
     background-color: var(--white);
@@ -158,6 +163,7 @@ nav{
 
 #sobre{
     background-color: var(--white);
+    padding: 2rem 0 2rem 0;
 }
 
 #sobre .sobre-content{
@@ -165,10 +171,6 @@ nav{
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
-}
-
-#sobre .sobre-content .sobre-text{
-    margin-top: 2rem;
 }
 
 #sobre .sobre-content .sobre-text h2 {
@@ -391,6 +393,21 @@ nav{
     border: 1px solid #E2E8F0;
 }
 
+#projetos .projetos-content .cep-dica.dica-erro {
+    background-color: #FEF2F2;
+    color: #DC2626;
+}
+
+#projetos .projetos-content .cep-dica.dica-sucesso {
+    background-color: #F0FDF4;
+    color: #16A34A;
+}
+
+#projetos .projetos-content .cep-dica.dica-carregando {
+    background-color: #FEF9C3;
+    color: #CA8A04;
+}
+
 #contato{
     background-color: #F8FAFC;
     padding: 2rem 0 2rem 0;
@@ -520,4 +537,189 @@ footer .footer-social a{
 
 footer .footer-social a:hover{
     color: var(--primary);
+}
+
+/* Menu Responsivo */
+nav {
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.75rem;
+    height: 1.25rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.ativo span:nth-child(1) {
+    transform: translateY(0.5625rem) rotate(45deg);
+}
+
+.menu-toggle.ativo span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.ativo span:nth-child(3) {
+    transform: translateY(-0.5625rem) rotate(-45deg);
+}
+
+
+/* até 900px */
+@media (max-width: 900px) {
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background-color: var(--bg-primary);
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        z-index: 10;
+    }
+
+    .menu.ativo {
+        max-height: 20rem;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        display: block;
+        padding: 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /* Hero */
+    #home .home-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #home .home-text h1 {
+        font-size: 2.25rem;
+    }
+
+    #home .home-text .botoes {
+        justify-content: center;
+    }
+
+    #home .home-img img {
+        height: 22rem;
+    }
+
+    /* Sobre */
+    #sobre .sobre-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #sobre .sobre-content .icon {
+        justify-content: center;
+    }
+
+    #sobre .sobre-content .sobre-img img {
+        width: 22rem;
+    }
+
+    /* Projetos */
+    #projetos .projetos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #projetos .projetos-content .formulario {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contato */
+    #contato .contato-content {
+        grid-template-columns: 1fr;
+    }
+
+    #contato .contato-content .contato-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* até 600px */
+@media (max-width: 600px) {
+
+    #home .home-text h1 {
+        font-size: 1.75rem;
+    }
+
+    #home .home-text h2 {
+        font-size: 1.0625rem;
+    }
+
+    #home .home-text .botoes {
+        flex-direction: column;
+    }
+
+    #home .home-text .botoes .btn,
+    #home .home-text .botoes .btn-outline {
+        width: 100%;
+    }
+
+    #home .home-img img {
+        height: 16rem;
+    }
+
+    #sobre .sobre-content .sobre-img img {
+        width: 100%;
+        max-width: 18rem;
+    }
+
+    #projetos .projetos-content .formulario .formulario-info {
+        grid-template-columns: 1fr;
+    }
+
+    #projetos .projetos-content .formulario-cep {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    #projetos .projetos-content .formulario-cep input {
+        width: 100%;
+    }
+
+    #projetos .projetos-content .formulario-cep button {
+        width: 100%;
+        height: 2.25rem;
+    }
+
+    #projetos .projetos-content .cep-dica {
+        width: 100%;
+    }
+
+    footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
 }
