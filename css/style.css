@@ -1,3 +1,5 @@
+/* Início: Variáveis Globais */
+
 :root{
     --bg-primary: #060C18;
     --bg-secondary: #0F172A;
@@ -5,6 +7,11 @@
     --white: #FFFFFF;
     --gray: #9B9C9F;
 }
+/* Fim: Variáveis Globais */
+
+
+
+/* Início: Reset e Estilos Base */
 
 *{
     margin: 0;
@@ -22,17 +29,21 @@ body{
     background-color: var(--white);
 }
 
+.container{
+    width: min(90%, 75rem);
+    margin: 0 auto;
+}
+/* Fim: Reset e Estilos Base */
+
+/* Início: Header / Navegação */
+
 header{
     background-color: var(--bg-primary);
     padding: 1.25rem 0;
 }
 
-.container{
-    width: min(90%, 75rem);
-    margin: 0 auto;
-}
-
 nav{
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,6 +88,43 @@ nav{
 .menu a:hover{
     color: var(--primary);
 }
+
+/* Botão hambúrguer */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 1.75rem;
+    height: 1.25rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-toggle span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: var(--white);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.ativo span:nth-child(1) {
+    transform: translateY(0.5625rem) rotate(45deg);
+}
+
+.menu-toggle.ativo span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.ativo span:nth-child(3) {
+    transform: translateY(-0.5625rem) rotate(-45deg);
+}
+/* Fim: Header / Navegação */
+
+/* Início: Seção Home (Hero) */
 
 #home{
     min-height: 85vh;
@@ -160,6 +208,9 @@ nav{
 #home .home-img img{
     height: 35rem;
 }
+/* Fim: Seção Home (Hero) */
+
+/* Início: Seção Sobre Mim */
 
 #sobre{
     background-color: var(--white);
@@ -222,6 +273,9 @@ nav{
 #sobre .sobre-content .sobre-img img{
     width: 35rem;
 }
+/* Fim: Seção Sobre Mim */
+
+/* Início: Seção Projetos + Consulta CEP */
 
 #projetos{
     background-color: var(--white);
@@ -339,6 +393,7 @@ nav{
     border-radius: 2px;
 }
 
+/* Formulário de consulta de CEP (ViaCEP) */
 #projetos .projetos-content .formulario{
     padding-top: 2rem;
     display: grid;
@@ -407,6 +462,9 @@ nav{
     background-color: #FEF9C3;
     color: #CA8A04;
 }
+/* Fim: Seção Projetos + Consulta CEP */
+
+/* Início: Seção Contato */
 
 #contato{
     background-color: #F8FAFC;
@@ -505,6 +563,9 @@ nav{
     color: var(--primary);
     font-size: 1.125rem;
 }
+/* Fim: Seção Contato */
+
+/* Início: Footer */
 
 footer{
     background-color: var(--bg-primary);
@@ -538,47 +599,10 @@ footer .footer-social a{
 footer .footer-social a:hover{
     color: var(--primary);
 }
+/* Fim: Footer */
 
-/* Menu Responsivo */
-nav {
-    position: relative;
-}
+/* Início: Responsividade - até 900px */
 
-.menu-toggle {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 1.75rem;
-    height: 1.25rem;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.menu-toggle span {
-    display: block;
-    height: 2px;
-    width: 100%;
-    background-color: var(--white);
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
-.menu-toggle.ativo span:nth-child(1) {
-    transform: translateY(0.5625rem) rotate(45deg);
-}
-
-.menu-toggle.ativo span:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle.ativo span:nth-child(3) {
-    transform: translateY(-0.5625rem) rotate(-45deg);
-}
-
-
-/* até 900px */
 @media (max-width: 900px) {
 
     .menu-toggle {
@@ -614,7 +638,6 @@ nav {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    /* Hero */
     #home .home-content {
         flex-direction: column;
         text-align: center;
@@ -632,7 +655,6 @@ nav {
         height: 22rem;
     }
 
-    /* Sobre */
     #sobre .sobre-content {
         flex-direction: column;
         text-align: center;
@@ -646,7 +668,6 @@ nav {
         width: 22rem;
     }
 
-    /* Projetos */
     #projetos .projetos-grid {
         grid-template-columns: 1fr;
     }
@@ -655,7 +676,6 @@ nav {
         grid-template-columns: 1fr;
     }
 
-    /* Contato */
     #contato .contato-content {
         grid-template-columns: 1fr;
     }
@@ -664,9 +684,11 @@ nav {
         grid-template-columns: 1fr;
     }
 }
+/* Fim: Responsividade - até 900px */
 
 
-/* até 600px */
+/* Início: Responsividade - até 600px */
+
 @media (max-width: 600px) {
 
     #home .home-text h1 {
@@ -723,3 +745,4 @@ nav {
         text-align: center;
     }
 }
+/* Fim: Responsividade - até 600px*/
