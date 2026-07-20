@@ -206,7 +206,10 @@ nav{
 }
 
 #home .home-img img{
-    height: 35rem;
+    width: 50rem;
+    border-radius: 20px;
+    border: .1rem solid #2563EB;
+    box-shadow: 0 0 2rem rgba(37,99,235,.4);
 }
 /* Fim: Seção Home (Hero) */
 
@@ -271,8 +274,9 @@ nav{
 }
 
 #sobre .sobre-content .sobre-img img{
-    width: 35rem;
+    width: 100%;
 }
+
 /* Fim: Seção Sobre Mim */
 
 /* Início: Seção Projetos + Consulta CEP */
@@ -652,7 +656,7 @@ footer .footer-social a:hover{
     }
 
     #home .home-img img {
-        height: 22rem;
+        width: 26rem;
     }
 
     #sobre .sobre-content {
@@ -665,7 +669,7 @@ footer .footer-social a:hover{
     }
 
     #sobre .sobre-content .sobre-img img {
-        width: 22rem;
+        max-width: 22rem;
     }
 
     #projetos .projetos-grid {
@@ -709,11 +713,10 @@ footer .footer-social a:hover{
     }
 
     #home .home-img img {
-        height: 16rem;
+        width: 18rem;
     }
 
     #sobre .sobre-content .sobre-img img {
-        width: 100%;
         max-width: 18rem;
     }
 
